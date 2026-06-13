@@ -33,7 +33,7 @@
           <div class="password">
             <label for="password">Password</label>
             <input type="password" id="password" />
-            <i class="fa-solid fa-eye-slash" id="eyeIconPassword"></i>
+            <i class="fa-solid fa-eye-slash eyeIcon" id="eyeIconPassword"></i>
             <p id="passwordMsg">password is</p>
             <div class="password-strength">
               <!-- at lest 8 char -->
@@ -46,14 +46,17 @@
                 <i class="fa-solid fa-xmark" id="uppercaseParameter"></i>
                 <span>At least 1 uppercase letter</span>
               </div>
+              <!-- lowercase -->
               <div class="lowercase">
                 <i class="fa-solid fa-xmark" id="lowercaseParameter"></i>
                 <span>At least 1 lowercase letter</span>
               </div>
+              <!-- number -->
               <div class="number">
                 <i class="fa-solid fa-xmark" id="numberParameter"></i>
                 <span>At least 1 number</span>
               </div>
+              <!-- spacial char -->
               <div class="parameter-item" id="specialParameter">
                 <i class="fa-solid fa-xmark" id="specialIcon"></i>
                 <span>At least 1 special character</span>
@@ -63,7 +66,7 @@
           <div class="confirm">
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" id="confirmPassword">
-            <i class="fa-solid fa-eye-slash" id="eyeIconConfirm"></i>
+            <i class="fa-solid fa-eye-slash eyeIcon" id="eyeIconConfirm"></i>
             <p id="confirmMsg">confirm password</p>
           </div>
         </form>
