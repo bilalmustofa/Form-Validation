@@ -14,27 +14,39 @@
     <div class="container">
       <h1 class="title">Form Validation</h1>
       <div>
-        <form action="#">
+        <form action="">
+
+          <!-- first name -->
           <div class="first-name">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" />
-            <p id="firstNameMsg">fill fist name</p>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Enter First Name"/>
+            <p class="msg" id="firstNameMsg">fill fist name</p>
           </div>
+
+          <!-- last name -->
           <div class="last-name">
-            <label for="laststName">Last Name</label>
-            <input type="text" id="laststName" />
-            <p id="lastNameMsg">fill last name</p>
+            <label for="laststName">Last Name:</label>
+            <input type="text" id="laststName" placeholder="Enter Last Name"/>
+            <p class="msg" id="lastNameMsg">fill last name</p>
           </div>
+
+          <!-- phone number -->
           <div class="phone-number">
-            <label for="phonenumber">Phone Number</label>
-            <input type="number" id="phonenumber" />
-            <p id="phonenumberMsg">small phone number</p>
+            <label for="phonenumber">Phone Number:</label>
+            <input type="number" id="phonenumber" placeholder="Enter Phone Number"/>
+            <p class="msg" id="phonenumberMsg">small phone number</p>
           </div>
+
+          <!-- password -->
           <div class="password">
-            <label for="password">Password</label>
-            <input type="password" id="password" />
-            <i class="fa-solid fa-eye-slash eyeIcon" id="eyeIconPassword"></i>
-            <p id="passwordMsg">password is</p>
+            <label for="password">Password:</label>
+            <div class="password-box">
+              <input type="password" id="password" placeholder="Enter Your Password"/>
+              <i class="fa-solid fa-eye-slash eyeIcon" id="eyeIconPassword"></i>
+            </div>
+            <p class="msg" id="passwordMsg">password is</p>
+
+            <!-- password strength parameter -->
             <div class="password-strength">
               <!-- at lest 8 char -->
               <div class="length">
@@ -63,12 +75,19 @@
               </div>
             </div>
           </div>
+          
+          <!-- password conformation -->
           <div class="confirm">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword">
-            <i class="fa-solid fa-eye-slash eyeIcon" id="eyeIconConfirm"></i>
-            <p id="confirmMsg">confirm password</p>
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="confirm-pass-box">
+              <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+              <i class="fa-solid fa-eye-slash eyeIcon" id="eyeIconConfirm"></i>
+            </div>
+            <p class="msg" id="confirmMsg">confirm password</p>
           </div>
+
+          <!-- submit button -->
+           <button type="button" class="submit-btn">Submit</button>
         </form>
       </div>
     </div>
