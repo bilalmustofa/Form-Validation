@@ -11,6 +11,8 @@ body {
     background-color: rgb(224, 247, 247);
 }
 .container {
+    width: 100%;
+    max-width: 400px;
     background-color: rgb(247, 245, 245);
     padding: 25px;
     border-radius: 15px;
